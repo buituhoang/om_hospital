@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="patient_james" model="hospital.patient">
+            <field name="name">James</field>
+            <field name="age">42</field>
+            <field name="age_group">adult</field>
+            <field name="gender">female</field>
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <record id="appointment_for_james" model="hospital.appointment">
+            <field name="patient_id" ref="patient_james"/>
+        </record>
+    </data>
+</odoo>
+
+
